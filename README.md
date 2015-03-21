@@ -9,8 +9,8 @@ on Windows.   If you want to run on Linux, just create a similar Bash script.
 
 There are two different methods you can launch Jmeter with in this project:
 
-- Run with Gradle option - ```startJmeterWithGradle.bat```
-- Run with Maven option - ```startJmeterWithMaven.bat```
+- Run with Gradle option will run Jmeter version 2.6, which does not have support for the Selenium remote webdriver example I provide below - ```startJmeterWithGradle.bat```
+- Run with Maven option will run Jmeter version 2.11 with plugins version 1.2.1, which does support the Selenium remote webdriver example I provide below - ```startJmeterWithMaven.bat```
 
 When Jmeter GUI starts, in the console you will see the Jmeter version number that is being started.
 
