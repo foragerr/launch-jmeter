@@ -18,5 +18,4 @@ When Jmeter GUI starts, in the console you will see the Jmeter version number th
 
 In the ```src/test/jmeter``` folder you will find a number of sample Jmeter .jmx project files. After starting Jmeter, just browse to that folder and open one of the files with the Jmeter application.
 
-*SauceLabs-Example.jmx* - An example of running Chrome browser tests from Jmeter within the SauceLabs cloud service.  Requires that you sign up to SauceLabs and create a free 2-thread account.    After signing up, get your ```sauce key```, open the ```SauceLabs-Example.jmx``` project file and then add your ```sauce key``` value in the ```User Defined Variables``` config element.
-
+*SauceLabs-Example.jmx* - An example of running Chrome browser tests from Jmeter within the SauceLabs cloud service.  Requires that you sign up to SauceLabs and create a free 2-thread account.    After signing up, get your ```sauce key```, open the ```SauceLabs-Example.jmx``` project file and then add your ```sauce key``` value in the included file called ```sauce-key.properties``` and put your ```sauce username``` in the included file called ```sauce-user.properties``` .
