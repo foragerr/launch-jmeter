@@ -44,6 +44,8 @@ Temporary Items
 
 # maven build directory
 target/
+build/
+.gradle/
 
 # saucelabs username and password files
 sauce-user.properties
