@@ -14,6 +14,8 @@ There are two different methods you can launch Jmeter with in this project:
 
 When Jmeter GUI starts, in the console you will see the Jmeter version number that is being started.
 
+NOTE: Updating the jmeter maven plugin to 1.10.1 in the pom.xml will run Jmeter 2.13 but I had mixed results with that.
+
 ## What is included here
 
 In the ```src/test/jmeter``` folder you will find a number of sample Jmeter .jmx project files. After starting Jmeter, just browse to that folder and open one of the files with the Jmeter application.
