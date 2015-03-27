@@ -1,4 +1,4 @@
-# run-jmeter-with-plugins-via-build-tools
+# launch-jmeter
 
 A Maven project to run the latest Jmeter with all plugins included using a build tool like Maven or Gradle.
 
