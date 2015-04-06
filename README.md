@@ -1,6 +1,6 @@
 # launch-jmeter
 
-A Maven project to run the latest Jmeter with all plugins included using a build tool like Maven or Gradle.
+A Maven project to run the latest Jmeter with all plugins included using either Maven or Gradle.
 
 ## How-To
 
