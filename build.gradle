@@ -12,6 +12,7 @@ buildscript {
         classpath "org.codehaus.groovy:groovy:2.4.0"
         classpath "com.opencsv:opencsv:3.1"
         classpath "com.google.guava:guava:18.0"
+        classpath "org.apache.commons:commons-lang3:3.4"
         classpath "kg.apc:jmeter-plugins-standard:1.2.1"
         classpath "kg.apc:jmeter-plugins-common:1.2.1"
         classpath "kg.apc:jmeter-plugins-extras:1.2.1"
