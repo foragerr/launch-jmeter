@@ -25,21 +25,6 @@ buildscript {
 	configurations.classpath.exclude group: 'commons-pool2', module: 'commons-pool2'
 }
 
-task addToJmeterClasspath << {
-    println "\nLoading the following jmeter plugins..."
-    buildscript.configurations.classpath.each { 
-        String absolutePath = it.getAbsolutePath();
-        if (absolutePath.contains("jmeter-plugins") || absolutePath.contains("groovy") || 
-            absolutePath.contains("guava") || absolutePath.contains("opencsv") || 
-            absolutePath.contains("commons-lang3") ) 
-        {
-            println "  " + absolutePath;
-	    pluginList.add(absolutePath.replace("\\","/"));
-        }
-	}
-	println ""
-}
-
 jmeterRun.configure {
 	enableReports = true
 	jmeterIgnoreFailure = false
@@ -48,7 +33,7 @@ jmeterRun.configure {
 
 jmeterEditor.configure {
 	maxHeapSize = "1200M"
-	jmeterPluginJars = pluginList
+	jmeterPluginJars = ["groovy","guava","opencsv","jmeter-plugins","commons-lang3"]
 }
 
 
