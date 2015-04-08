@@ -29,9 +29,12 @@ task addToJmeterClasspath << {
     println "\nLoading the following jmeter plugins..."
     buildscript.configurations.classpath.each { 
         String absolutePath = it.getAbsolutePath();
-        if (absolutePath.contains("jmeter-plugins") || absolutePath.contains("groovy") || absolutePath.contains("guava") || absolutePath.contains("opencsv") || absolutePath.contains("commons-lang3") ) {
+        if (absolutePath.contains("jmeter-plugins") || absolutePath.contains("groovy") || 
+            absolutePath.contains("guava") || absolutePath.contains("opencsv") || 
+            absolutePath.contains("commons-lang3") ) 
+        {
             println "  " + absolutePath;
-			pluginList.add(absolutePath.replace("\\","/"));
+	    pluginList.add(absolutePath.replace("\\","/"));
         }
 	}
 	println ""
