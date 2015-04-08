@@ -33,7 +33,7 @@ jmeterRun.configure {
 
 jmeterEditor.configure {
 	maxHeapSize = "1200M"
-	jmeterPluginJars = ["groovy","guava","opencsv","jmeter-plugins","commons-lang3"]
+	jmeterPluginJars = ["groovy","guava","opencsv","jmeter-plugins.*","commons-lang3"]
 }
 
 
